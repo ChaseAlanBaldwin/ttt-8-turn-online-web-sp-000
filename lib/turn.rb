@@ -7,7 +7,7 @@ def display_board(board)
 end
 
 def input_to_index(userInput)
-
+  stringToInt = userInput.to_i
 end
 
 def valid_move?(board, index, charachter = 'X')
