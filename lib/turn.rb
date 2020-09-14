@@ -7,8 +7,12 @@ def display_board(board)
 end
 
 def input_to_index(userInput)
-  stringToInt = userInput.to_i
-  stringToInt
+  stringToInt = userInput.to_i - 1
+  if stringToInt.instance_of?(Integer)
+    return stringToInt
+  else 
+    return -1
+  end
 end
 
 def valid_move?(board, index, charachter = 'X')
