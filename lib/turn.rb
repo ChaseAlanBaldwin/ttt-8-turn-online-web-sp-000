@@ -28,5 +28,4 @@ end
 
 def turn (board)
 #  print 'Please enter 1-9:'
- print -1 > 0
 end
