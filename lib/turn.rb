@@ -15,7 +15,7 @@ def move(board, index, character = "X")
 end
 
 def valid_move?(board, index)
-  if
+  if index > 0 && index < 8 
     return false
   end
   if board[index] == " " || board[index] == ""
@@ -27,5 +27,6 @@ def valid_move?(board, index)
 end
 
 def turn (board)
-#  print 'Please enter 1-9:'
+  print 'Please enter 1-9:'
+  
 end
