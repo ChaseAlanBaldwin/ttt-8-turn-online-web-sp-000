@@ -15,31 +15,18 @@ def move(board, index, character = "X")
 end
 
 def valid_move?(board, index)
-  if index > board.length
-    return nil
+  if index > 0 && index < 8 
+    return false
   end
-  if position_taken?(board, index) == true
+  if board[index] == " " || board[index] == ""
     return true
-  end
-  if position_taken?(board, index) == false
-  return false
-end
-end
-
-def position_taken?(board, index)
-  if index < 0
-    return true
-  end
-  if board[index] == " "
-    return false
-  end
-  if board[index] == ""
-    return false
-  end
-  if board[index] == nil
-    return false
   end
   if board[index] == "X" || board[index] == "O"
-    return true
+    return false
   end
+end
+
+def turn (board)
+  print 'Please enter 1-9:'
+  
 end
