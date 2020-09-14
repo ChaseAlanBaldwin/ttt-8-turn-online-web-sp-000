@@ -10,7 +10,7 @@ def input_to_index(userInput)
   stringToInt = userInput.to_i - 1
   if stringToInt.instance_of?(Integer)
     return stringToInt
-  else 
+  else
     return -1
   end
 end
