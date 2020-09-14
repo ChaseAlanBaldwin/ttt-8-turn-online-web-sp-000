@@ -15,6 +15,9 @@ def move(board, index, character = "X")
 end
 
 def valid_move?(board, index)
+  if index < 0 
+    return true
+  end
   if index > board.length
     return nil
   end
