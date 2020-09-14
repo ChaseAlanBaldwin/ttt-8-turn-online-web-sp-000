@@ -8,6 +8,7 @@ end
 
 def input_to_index(userInput)
   stringToInt = userInput.to_i
+  stringToInt
 end
 
 def valid_move?(board, index, charachter = 'X')
