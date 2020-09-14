@@ -19,10 +19,10 @@ def valid_move?(board, index)
     return nil
   end
   if position_taken?(board, index) == true
-    return false
+    return true
   end
   if position_taken?(board, index) == false
-  return true
+  return false
 end
 end
 
