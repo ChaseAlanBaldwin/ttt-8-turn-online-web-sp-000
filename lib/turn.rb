@@ -15,7 +15,7 @@ def input_to_index(userInput)
   end
 end
 
-def valid_move?(board, index)
+def test(board, index)
   if index > board.length
     return nil
   end
@@ -23,11 +23,11 @@ def valid_move?(board, index)
     return true
   end
   if position_taken?(board, index) == false
-  return false
-end
+  return true
+  end
 end
 
-def position_taken?(board, index)
+def valid_move?(board, index)
   if board[index] == " "
     return false
   end
