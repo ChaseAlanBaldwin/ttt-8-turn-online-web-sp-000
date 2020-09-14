@@ -18,12 +18,13 @@ def valid_move?(board, index)
   if index < 0 || index > 8
     return false
   end
-  if board[index] == " " || board[index] == ""
-    return true
-  end
   if board[index] == "X" || board[index] == "O"
     return false
   end
+  if board[index] == " " || board[index] == ""
+    return true
+  end
+
 end
 
 def turn (board)
