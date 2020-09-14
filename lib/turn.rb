@@ -15,7 +15,7 @@ def move(board, index, character = "X")
 end
 
 def valid_move?(board, index)
-  if index < 0 && index > 8
+  if index < 0 || index > 8
     return false
   end
   if board[index] == " " || board[index] == ""
